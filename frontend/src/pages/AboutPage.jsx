@@ -35,7 +35,7 @@ export default function AboutPage() {
 </section>
 
       {/* Story */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <div className="w-full aspect-square bg-gradient-to-br from-brand-100 to-brand-300 rounded-4xl flex items-center justify-center text-[10rem]">

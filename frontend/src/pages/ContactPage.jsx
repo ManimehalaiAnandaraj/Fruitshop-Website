@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 
@@ -19,14 +18,28 @@ export default function ContactPage() {
   const handleSubmit = e => { e.preventDefault(); setSent(true); };
 
   return (
-   <main className="min-h-screen bg-gray-50 pt-32 pb-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <h1 className="section-title mb-3">Get in Touch 🍊</h1>
-          <p className="section-subtitle">Have a question, feedback, or bulk order? We'd love to hear from you.</p>
-        </div>
+    
+      <main className="min-h-screen pt-20">
+     {/* Header Hero */}
+<section className="bg-hero-pattern py-20 px-4">
+  <div className="max-w-4xl mx-auto text-center">
+    <h1 className="section-title mb-5 flex items-center justify-center gap-3">
+      Get in Touch 🍊
+    </h1>
+    <p className="section-subtitle max-w-2xl mx-auto">
+     Whether you are looking for more information about our services or need to speak with 
+     our team,we are here to help.Please fill out the form 
+     or use the contact details.
+    </p>
+  </div>
+</section>
 
+      {/* Content */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 py-10">
+
+        {/* Contact Info + Form */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
+
           {/* Contact Info */}
           <div className="space-y-4">
             {[
@@ -107,6 +120,7 @@ export default function ContactPage() {
             ))}
           </div>
         </div>
+
       </div>
     </main>
   );

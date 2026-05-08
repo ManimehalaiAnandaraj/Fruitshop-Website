@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Search, SlidersHorizontal } from 'lucide-react';
 import ProductCard from '../components/ui/ProductCard';
@@ -9,14 +8,25 @@ export default function ShopPage({ onAddToCart }) {
   const { filtered, search, setSearch, activeCategory, setActiveCategory, sortBy, setSortBy } = useProducts();
 
   return (
-    <main className="min-h-screen bg-gray-50 pt-32 pb-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-<div className="mb-10 text-center">
-  <h1 className="section-title mb-2">🛒 Our Fruit Shop</h1>
-  <p className="section-subtitle">Explore {filtered.length} fresh varieties from farms across India.</p>
-  <p className="section-subtitle mt-1">🌱 Fresh picked daily · Delivered to your doorstep</p>
-</div>
+    
+      <main className="min-h-screen pt-20">
+     {/* Header Hero */}
+<section className="bg-hero-pattern py-20 px-4">
+  <div className="max-w-4xl mx-auto text-center">
+    <h1 className="section-title mb-5 flex items-center justify-center gap-3">
+       🛒 Our Fruit Shop
+    </h1>
+   <p className="section-subtitle max-w-2xl mx-auto">
+      Discover our thoughtfully curated selection of high-quality products designed to elevate your daily 
+      routine.chemical-free fruits.From timeless essentials to modern favorites, 
+      find exactly what you're looking for.
+    </p>
+        </div>
+</section>
+
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+
         {/* Search + Sort */}
         <div className="flex flex-col sm:flex-row gap-4 mb-6">
           <div className="relative flex-1 max-w-md">
