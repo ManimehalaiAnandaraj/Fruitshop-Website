@@ -237,7 +237,7 @@ export const testimonials = [
     role: "Home Chef",
     rating: 5,
     comment: "The Alphonso mangoes are absolutely divine. You can smell them from across the room! Will never buy from a supermarket again.",
-    date: "2 days ago",
+    date: "3 days ago",
   },
   {
     id: 2,
